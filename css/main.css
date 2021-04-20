@@ -1,0 +1,78 @@
+/***** Base Styles *****/
+/* For mobile phones: */
+*  {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/bg-mobile.svg");
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: white;
+  /* width: 375px; */
+  min-height: 100vh;
+  background-color: hsl(257, 40%, 49%);
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 375px 1fr; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+#illustration {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  width: 25%;
+  font-size; 16px;
+  padding: .75em 1em;
+  border:  none;
+  border-radius: 10px;
+}
+
+.button:hover  {
+  background-color: hsl(300, 69%, 71%);
+}
+
+i {
+  color: white;
+  margin: 1%;
+}
+
+i:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* For tablets: */
+
+
+/* For desktop: */
+@media screen and (min-width: 600px) {
+
+  body{
+    background-image: url("./images/bg-desktop.svg");
+  }
+
+  main {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .half-width {
+    width: 50%;
+  }
+}

@@ -5,28 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/9429673cc3.js" crossorigin="anonymous"></script>
 
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body {
-      background-color: lightblue;
-    }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <header>
     <img src="./images/logo.svg" alt="Huddle Logo">
   </header>
   <main>
-    <figure>
-      <img src="./images/illustration-mockups.svg" alt="">
-    </figure>
-    <section>
+    <section class="half-width">
+        <img src="./images/illustration-mockups.svg" alt="" id="illustration">
+    </section>
+    <section class="half-width" id="community">
       <h1>Build The Community Your Fans Will Love</h1>
 
       <p>
@@ -34,7 +29,7 @@
         Create connections with your users as you engage in genuine discussion.
       </p>
 
-      <button>Register</button>
+      <button class="button">Register</button>
       <div id="social-icons">
         <a href="https://www.facebook.com/">
           <i class="fab fa-facebook-f"></i>
