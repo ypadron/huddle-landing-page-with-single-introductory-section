@@ -17,27 +17,26 @@ body {
 }
 
 header {
-  width: 80%;
-  padding: 8% 0;
-  margin: 0 auto;
+  width: 100%;
+  padding: 7% 0;
 }
 
 header img {
-  width: 45%;
+  width: 50%;
+  padding: 0 7%;
   height: auto;
 }
 
 main {
-  width: 80%;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  padding: 0 5%;
 }
 
 #illustration img {
   max-width: 100%;
   height: auto;
-  padding: 10% 0;
+  padding: 9% 3%;
 }
 
 #community  {
@@ -50,19 +49,22 @@ main {
 h1 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
-  margin: 1.5em 0 .25em;
+  margin: 1em 0 .25em;
+  padding-top: 6%;
 }
 
 p {
   text-align: center;
+  padding: 3%;
   margin: .5em 0;
+  line-height: 1.6;
 }
 
 button {
-  width: 70%;
+  width: 60%;
   font-size; 16px;
-  margin: 5% 0 25%;
-  padding: .80em 1em;
+  margin: 5% 0 20%;
+  padding: 1em;
   border:  none;
   border-radius: 16px;
   color: hsl(257, 40%, 49%);
@@ -80,7 +82,7 @@ button {
 
 #social-icons a {
   margin: 15%;
-  padding: 10%;
+  padding: 15% 25%;
   text-decoration: none;
   border: solid;
   border-width: 1px;
@@ -90,7 +92,6 @@ button {
 
 i {
   color: white;
-
 }
 
 i:hover {
@@ -107,15 +108,51 @@ i:hover {
 @media screen and (min-width: 600px) {
 
   body{
-    background-image: url("./images/bg-desktop.svg");
+    background-image: url("../images/bg-desktop.svg");
+  }
+
+  header {
+    /* padding: 2% 0; */
+  }
+
+  header img {
+    width: 15%;
   }
 
   main {
     flex-direction: row;
-    width: 100%;
   }
 
   .half-width {
     width: 50%;
+  }
+
+  #illustration img {
+    padding: 5% 0;
+  }
+
+  #community  {
+    /* align-items: left; */
+    justify-content: flex-start;
+  }
+
+  h1  {
+    align-self: flex-start;
+    font-size: 2em;
+
+  }
+
+  p {
+    text-align: left;
+  }
+
+  button  {
+    width: 25%;
+    /* margin: 0; */
+    align-self: flex-start;
+  }
+
+  #social-icons {
+    justify-content: flex-end;
   }
 }
