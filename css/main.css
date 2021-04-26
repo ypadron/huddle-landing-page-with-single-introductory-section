@@ -62,7 +62,7 @@ p {
 
 button {
   width: 60%;
-  font-size; 16px;
+  font-size: 16px;
   margin: 5% 0 20%;
   padding: 1em;
   border:  none;
@@ -109,22 +109,28 @@ i:hover {
 
   body{
     background-image: url("../images/bg-desktop.svg");
+    width: 1440px;
   }
 
   header {
-    /* padding: 2% 0; */
+    padding: 3% 0;
   }
 
   header img {
-    width: 15%;
+    width: 30%;
   }
 
   main {
     flex-direction: row;
+    padding: 0 7%;
   }
 
   .half-width {
-    width: 50%;
+    /* width: 50%; */
+  }
+
+  #illustration {
+    width: 60%
   }
 
   #illustration img {
@@ -132,27 +138,28 @@ i:hover {
   }
 
   #community  {
-    /* align-items: left; */
+    width: 40%;
     justify-content: flex-start;
   }
 
   h1  {
-    align-self: flex-start;
-    font-size: 2em;
-
+    text-align: left;
+    font-size: 2.5em;
   }
 
   p {
     text-align: left;
+    padding-left: 0;
   }
 
   button  {
-    width: 25%;
-    /* margin: 0; */
+    width: 30%;
+    margin-top: 3%;
     align-self: flex-start;
   }
 
   #social-icons {
-    justify-content: flex-end;
+    margin-top: 10%;
+    padding: 3% 0 0;
   }
 }
